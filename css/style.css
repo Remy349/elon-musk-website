@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------------- NAVBAR --------------------------------- */
+
+nav {
+    background-color: rgb(48, 48, 49);
+    overflow: hidden;
+    padding: 10px 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    float: left;
+    padding: 12px;
+    border-radius: 4px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav .nav-branch {
+    font-size: 27px;
+    font-weight: bold;
+    cursor: auto;
+    margin-left: 70px;
+}
+
+nav .nav-links {
+    float: right;
+    margin-right: 70px;
+}
+
+nav .nav-links .nav-link {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+nav .nav-links .nav-link:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+/* ---------------------------- CONTENT CONTAINER --------------------------- */
+
+.container-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-two {
+    background-color: rgb(223, 223, 223);
+    margin-top: 40px;
+}
+
+/* ---------------------------------- SIDE ---------------------------------- */
+
+.side {
+    flex: 40%;
+    text-align: center;
+}
+
+.side .card {
+    max-width: 490px;
+    margin: auto;
+}
+
+.side .card .card-img {
+    width: 260px;
+    height: 360px;
+}
+
+.side .card h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.side .card p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+
+/* ---------------------------------- MAIN ---------------------------------- */
+
+.main {
+    flex: 60%;
+    max-width: 55%;
+}
+
+.main .main-two {
+    margin-top: 15px;
+}
+
+.main .main-title {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+}
+
+.main .main-info {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------- LINE ---------------------------------- */
+
+.line {
+    background-color: #000000;
+    padding: 0.5px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* -------------------------------- COMPANIES ------------------------------- */
+
+.container-two .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.container-two .title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-two .row .column {
+    flex: 25%;
+}
+
+.container-two .row .column .card-comp {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-two .row .column .card-comp h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+}
+
+.container-two .row .column .card-comp p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container-two .row .column .card-comp .card-comp-img {
+    width: 250px;
+    height: 300px;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+
+footer {
+    background-color: rgb(48, 48, 49);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer .logo {
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+
+footer .logo .logo-container {
+    font-size: 55px;
+    color: #ffffff;
+}
+
+footer .creador {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo .logo-container:hover {
+    color: rgb(56, 127, 219);
+    font-size: 65px;
+    transition: .5s ease all;
+}
+
+
+
+/* ---------------------------- RESPONSIVE DESIGN --------------------------- */
+
+@media screen and (max-width: 580px) {
+
+    /* --------------------------------- NAVBAR --------------------------------- */
+    nav .nav-branch {
+        margin-left: 0px;
+        font-size: 25px;
+    }
+
+    nav .nav-links {
+        margin-right: 0px;
+    }
+
+    nav .nav-links .nav-link {
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+    /* ---------------------------- CONTENT CONTAINER --------------------------- */
+
+    .container-one {
+        flex-direction: column;
+    }
+
+    
+
+    /* ---------------------------------- SIDE ---------------------------------- */
+
+    .side .card p {
+        max-width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .side .card h1 {
+        font-size: 35px;
+        margin-top: 5px;
+    }
+
+    /* ---------------------------------- MAIN ---------------------------------- */
+
+    .main {
+        text-align: center;
+        margin: auto;
+        max-width: 90%;
+        margin-top: 15px;
+    }
+
+
+    .main .main-title {
+        font-size: 33px;
+    }
+
+    .main .main-info {
+        font-size: 18px;
+    }
+
+    /* -------------------------------- COMPANIES ------------------------------- */
+    .container-two .row {
+        flex-direction: column;
+    }
+
+    /* --------------------------------- FOOTER --------------------------------- */
+
+}
